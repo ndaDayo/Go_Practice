@@ -4,16 +4,14 @@ import (
 	"fmt"
 )
 
-type Person struct {
-	firstName string
-	age       int
+type Vertex struct {
+	X int
+	Y int
 }
 
 func main() {
-	var mike Person
-	mike.firstName = "Mike"
-	mike.age = 20
-	fmt.Println(mike.firstName)
+	v := Vertex{3, 4}
+	v.X = 11000
 
-	fmt.Println(mike.age)
+	fmt.Println(v.X)
 }
