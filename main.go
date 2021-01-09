@@ -1,10 +1,13 @@
 package main
 
 import (
-     "fmt"
-	  "time"
+	"fmt"
 )
 
-func main()  {
-	fmt.Println(time.Now())
+func add(x int, y int) int {
+	return x + y
+}
+
+func main() {
+	fmt.Println(add(24, 55))
 }
