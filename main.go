@@ -4,16 +4,16 @@ import (
 	"fmt"
 )
 
-func main() {
-	sum := 0
-	for i := 0; i < 10; i++ {
-		sum += i
-	}
-	fmt.Println(sum)
+type Person struct {
+	firstName string
+	age       int
+}
 
-	num := 1
-	for num < 100 {
-		num += num
-	}
-	fmt.Println(num)
+func main() {
+	var mike Person
+	mike.firstName = "Mike"
+	mike.age = 20
+	fmt.Println(mike.firstName)
+
+	fmt.Println(mike.age)
 }
