@@ -4,19 +4,16 @@ import (
 	"fmt"
 )
 
-func swap(x, y string) (string, string) {
-	return y, x
-}
-
-func split(sum int) (x, y int) {
-	x = sum * 4 / 9
-	y = sum - x
-	return
-}
-
 func main() {
-	a, b := swap("hey", "world")
-	fmt.Println(a, b)
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
 
-	fmt.Println(split(5))
+	num := 1
+	for num < 100 {
+		num += num
+	}
+	fmt.Println(num)
 }
