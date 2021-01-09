@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    container_name: go_lang
+    build: . 
+    tty: true 
+    volumes:
+      - .:/go/src/work # マウントディレクトリ指定
