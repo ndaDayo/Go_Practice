@@ -1,8 +1,11 @@
 version: '3'
 services:
   app:
+    image: golang:latest
     container_name: go_lang
     build: . 
     tty: true 
+    ports:
+      - 3001:3001
     volumes:
       - .:/go/src/work # マウントディレクトリ指定

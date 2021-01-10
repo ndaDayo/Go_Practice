@@ -1,22 +1,15 @@
 package main
 
-import "fmt"
-
-func adder() func(int) int {
-	sum := 0
-	return func(x int) int {
-		sum += x
-		return sum
-	}
-}
+import (
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
-	pos, neg := adder(), adder()
-
-	for i := 0; i < 10; i++ {
-		fmt.Println(
-			pos(i),
-			neg(-2*i),
-		)
-	}
+    r := gin.Default()
+    r.GET("/", func(c *gin.Context) {
+        c.JSON(200, gin.H{
+            "message": "pong",
+        })
+    })
+    r.Run(":3001")
 }
