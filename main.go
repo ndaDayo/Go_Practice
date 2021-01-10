@@ -4,14 +4,13 @@ import (
 	"fmt"
 )
 
-type Vertex struct {
-	X int
-	Y int
-}
-
 func main() {
-	v := Vertex{3, 4}
-	v.X = 11000
+	var a [2]string
+	a[0] = "hello"
+	a[1] = "World"
 
-	fmt.Println(v.X)
+	fmt.Println(a)
+
+	primes := [6]int{2,3,4,5,6,7}
+	fmt.Println(primes)
 }
