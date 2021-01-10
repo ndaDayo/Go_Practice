@@ -4,11 +4,15 @@ import (
 	"fmt"
 )
 
-var pow = []int{2, 3, 4, 5, 13, 43, 8}
+type Vertex struct {
+	Lat, Long float64
+}
+
+var m = map[string]Vertex{
+	"Bell Labs": {40.5451, -76.5452},
+	"Google":    {34.344, 43.3443},
+}
 
 func main() {
-	for i, v := range pow {
-		fmt.Println(i)
-		fmt.Println(v)
-	}
+	fmt.Println(m)
 }
