@@ -4,9 +4,11 @@ import (
 	"fmt"
 )
 
-func main() {
-	primes := [4]int{2, 3, 4, 5}
+var pow = []int{2, 3, 4, 5, 13, 43, 8}
 
-	var s []int = primes[0:2]
-	fmt.Println(s)
+func main() {
+	for i, v := range pow {
+		fmt.Println(i)
+		fmt.Println(v)
+	}
 }
